@@ -10,7 +10,7 @@ import intersection from 'lodash/intersection.js';
 import * as svgo from 'svgo';
 import Mustache from 'mustache';
 
-import Queue from './modules/waterfall/queue.mjs';
+import Queue from '../../modules/waterfall/queue.mjs';
 
 // 当前目录
 const currentDirectory = fileURLToPath(new URL('.',
@@ -174,7 +174,7 @@ export function cleanPaths({
         name: 'removeUnusedNS'
       },
       {
-        name: 'cleanupIds'
+        name: 'cleanupIDs'
       },
       {
         name: 'cleanupNumericValues'
@@ -223,7 +223,7 @@ export function cleanPaths({
 
 
   // 多个子节点
-  const childrenAsArray = false;
+  let childrenAsArray = false;
   const jsxResult = svgo.optimize(result.data, {
     plugins: [{
       name: 'svgAsReactFragment',
@@ -233,80 +233,82 @@ export function cleanPaths({
           enter(root) {
 
             const [svg, ...rootChildren] = root.children;
-            // // 没有根节点
-            // if (rootChildren.length > 0) {
-            //   throw new Error('Expected a single child of the root');
-            // }
+            // 没有根节点
+            if (rootChildren.length > 0) {
+              throw new Error('Expected a single child of the root');
+            }
 
-            // // 期望一个 svg 元素作为根子元素
-            // if (svg.type !== 'element' || svg.name !== 'svg') {
-            //   throw new Error('Expected an svg element as the root child');
-            // }
+            // 期望一个 svg 元素作为根子元素
+            if (svg.type !== 'element' || svg.name !== 'svg') {
+              throw new Error('Expected an svg element as the root child');
+            }
 
-            // // 有子节点
-            // if (svg.children.length > 1) {
-            //   childrenAsArray = true;
-            //   svg.children.forEach((svgChild, index) => {
-            //     svgChild.addAttr({
-            //       name: 'key',
-            //       value: index
-            //     });
-            //     // Original name will be restored later
-            //     // We just need a mechanism to convert the resulting
-            //     // svg string into an array of JSX elements
-            //     svgChild.renameElem(`SVGChild:${svgChild.name}`);
-            //   });
-            // }
-            // root.spliceContent(0, svg.children.length, svg.children);
+            // 有子节点
+            if (svg.children.length > 1) {
+              childrenAsArray = true;
+
+              svg.children.forEach((svgChild, index) => {
+                svgChild.addAttr({
+                  name: 'key',
+                  value: index
+                });
+
+                // Original name will be restored later
+                // We just need a mechanism to convert the resulting
+                // svg string into an array of JSX elements
+                svgChild.renameElem(`SVGChild:${svgChild.name}`);
+              });
+            }
+
+            root.spliceContent(0, svg.children.length, svg.children);
           },
         },
       }),
     }],
   });
 
-  // // 从 svg 字符串中提取路径
-  // // 清理 xml 路径
-  // // 实现为 svgo 插件
-  // let paths = jsxResult.data
-  //   .replace(/"\/>/g, '" />')
-  //   .replace(/fill-opacity=/g, 'fillOpacity=')
-  //   .replace(/xlink:href=/g, 'xlinkHref=')
-  //   .replace(/clip-rule=/g, 'clipRule=')
-  //   .replace(/fill-rule=/g, 'fillRule=')
-  //   // Fix visibility issue and save some bytes.
-  //   .replace(/ clip-path=".+?"/g, '')
-  //   // 删除未使用的定义
-  //   .replace(/<clipPath.+?<\/clipPath>/g, '');
+  // 从 svg 字符串中提取路径
+  // 清理 xml 路径
+  // 实现为 svgo 插件
+  let paths = jsxResult.data
+    .replace(/"\/>/g, '" />')
+    .replace(/fill-opacity=/g, 'fillOpacity=')
+    .replace(/xlink:href=/g, 'xlinkHref=')
+    .replace(/clip-rule=/g, 'clipRule=')
+    .replace(/fill-rule=/g, 'fillRule=')
+    // Fix visibility issue and save some bytes.
+    .replace(/ clip-path=".+?"/g, '')
+    // 删除未使用的定义
+    .replace(/<clipPath.+?<\/clipPath>/g, '');
 
-  // // 有大小
-  // const sizeMatch = svgPath.match(/^.*_(\d+)px.svg$/);
-  // const size = sizeMatch ? Number(sizeMatch[1]) : null;
+  // 有大小
+  const sizeMatch = svgPath.match(/^.*_(\d+)px.svg$/);
+  const size = sizeMatch ? Number(sizeMatch[1]) : null;
 
-  // // 设置大小
-  // if (size !== 24) {
-  //   // 最多保留2位小数
-  //   const scale = Math.round((24 / size) * 100) / 100;
-  //   paths = paths.replace('clipPath="url(#b)" ', '');
-  //   paths = paths.replace(/<path /g, `<path transform="scale(${scale}, ${scale})" `);
-  // }
+  // 设置大小
+  if (size !== 24) {
+    // 最多保留2位小数
+    const scale = Math.round((24 / size) * 100) / 100;
+    paths = paths.replace('clipPath="url(#b)" ', '');
+    paths = paths.replace(/<path /g, `<path transform="scale(${scale}, ${scale})" `);
+  }
 
-  // paths = removeNoise(paths);
+  paths = removeNoise(paths);
 
-  // if (childrenAsArray) {
-  //   const pathsCommaSeparated = paths
-  //     // 处理自闭标签
-  //     .replace(/key="\d+" \/>/g, '$&,')
-  //     // 处理剩下的
-  //     .replace(/<\/SVGChild:(\w+)>/g, '</$1>,');
+  if (childrenAsArray) {
+    const pathsCommaSeparated = paths
+      // 处理自闭标签
+      .replace(/key="\d+" \/>/g, '$&,')
+      // 处理剩下的
+      .replace(/<\/SVGChild:(\w+)>/g, '</$1>,');
 
-  //   paths = `[${pathsCommaSeparated}]`;
-  // }
+    paths = `[${pathsCommaSeparated}]`;
+  }
 
-  // // 设置路径
-  // paths = paths.replace(/SVGChild:/g, '');
+  // 设置路径
+  paths = paths.replace(/SVGChild:/g, '');
 
-  // return paths;
-
+  return paths;
 }
 
 // 工作队列
@@ -349,17 +351,19 @@ async function worker({
   });
 
   // 设置组件名称为驼峰
-  // const componentName = getComponentName(destPath);
+  const componentName = getComponentName(destPath);
 
-  // const fileString = Mustache.render(template, {
-  //   paths,
-  //   componentName,
-  // });
+  // 模版
+  const fileString = Mustache.render(template, {
+    paths,
+    componentName,
+  });
 
-  // // 绝对目录
-  // const absDestPath = path.join(options.outputDir, destPath);
-  // // 写入文件
-  // await fse.writeFile(absDestPath, fileString);
+  // 绝对目录
+  const absDestPath = path.join(options.outputDir, destPath);
+
+  // 写入文件
+  await fse.writeFile(absDestPath, fileString);
 }
 
 const handler = async (options) => {
@@ -413,26 +417,26 @@ const handler = async (options) => {
   });
 
   // 遍历文件
-  let legacyFiles = await globAsync(normalizePath(path.join(currentDirectory, '/legacy', '*.js')));
-  legacyFiles = legacyFiles.map((file) => path.basename(file));
+  // let legacyFiles = await globAsync(normalizePath(path.join(currentDirectory, '/legacy', '*.js')));
+  // legacyFiles = legacyFiles.map((file) => path.basename(file));
 
   // 生成文件
-  let generatedFiles = await globAsync(normalizePath(path.join(options.outputDir, '*.js')));
-  generatedFiles = generatedFiles.map((file) => path.basename(file));
+   await globAsync(normalizePath(path.join(options.outputDir, '*.js')));
+  // generatedFiles = generatedFiles.map((file) => path.basename(file));
 
   // 获取一个或多个数组的交集
-  const duplicatedIconsLegacy = intersection(legacyFiles, generatedFiles);
-  if (duplicatedIconsLegacy.length > 0) {
-    throw new Error(
-      `Duplicated icons in legacy folder. Either \n` +
-      `1. Remove these from the /legacy folder\n` +
-      `2. Add them to the blacklist to keep the legacy version\n` +
-      `The following icons are duplicated: \n${duplicatedIconsLegacy.join('\n')}`,
-    );
-  }
+  // const duplicatedIconsLegacy = intersection(generatedFiles);
+  // if (duplicatedIconsLegacy.length > 0) {
+  //   throw new Error(
+  //     `Duplicated icons in legacy folder. Either \n` +
+  //     `1. Remove these from the /legacy folder\n` +
+  //     `2. Add them to the blacklist to keep the legacy version\n` +
+  //     `The following icons are duplicated: \n${duplicatedIconsLegacy.join('\n')}`,
+  //   );
+  // }
 
-  await fse.copy(path.join(currentDirectory, '/legacy'), options.outputDir);
-  await fse.copy(path.join(currentDirectory, '/custom'), options.outputDir);
+  // await fse.copy(path.join(currentDirectory, '/legacy'), options.outputDir);
+  // await fse.copy(path.join(currentDirectory, '/custom'), options.outputDir);
 
   await generateIndex(options);
 };

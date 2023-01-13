@@ -27,7 +27,7 @@ export default function myDestRewriter(svgPathObj) {
   let fileName = svgPathObj.base;
 
   fileName = fileName
-    .replace(/_([0-9]+)px\.svg/, '.js')
+    .replace(/_(\d+)px\.svg/, '.js')
     .replace(/(^.)|(_)(.)/g, (match, p1, p2, p3) => (p1 || p3).toUpperCase());
 
   if (fileName.startsWith('3dRotation')) {

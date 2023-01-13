@@ -91,11 +91,13 @@ const downloadIcon = (icon) => {
     Object.keys(themeMap).map(async (theme) => {
       // 设置对应主题图标
       const formattedTheme = themeMap[theme].split('_').join('');
+      console.log('response', `https://fonts.gstatic.com/s/i/materialicons${formattedTheme}/${icon.name}/v${icon.version}/24px.svg`);
 
       // 下载图标
       const response = await fetch(
         `https://fonts.gstatic.com/s/i/materialicons${formattedTheme}/${icon.name}/v${icon.version}/24px.svg`,
       );
+
 
       if (response.status !== 200) {
         throw new Error(`status ${response.status}`);
@@ -123,13 +125,13 @@ async function run() {
       // 为生成的使用信息描述一个key
       .describe('start-after', 'Resume at the following index');
 
-    console.log('run', argv);
-
     await fse.emptyDir(path.join(currentDirectory, '../material-icons'));
 
     // 请求谷歌
-    const response = await fetch('https://fonts.google.com/metadata/icons');
-    const text = await response.text();
+    // const response = await fetch('https://fonts.google.com/metadata/icons');
+
+    const text = await fse.readFile('./json.txt', {  encoding: 'utf8'});
+    // const text = await response.text();
     const data = JSON.parse(text.replace(")]}'", ''));
     let {
       icons
