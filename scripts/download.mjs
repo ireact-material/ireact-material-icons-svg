@@ -126,9 +126,10 @@ async function run() {
       .describe('start-after', 'Resume at the following index');
 
     await fse.emptyDir(path.join(currentDirectory, '../material-icons'));
+    await fse.emptyDir(path.join(currentDirectory, '../material-icons/baseline'));
 
     // 请求谷歌
-    // const response = await fetch('https://fonts.google.com/metadata/icons');
+    const response = await fetch('https://fonts.google.com/metadata/icons');
 
     const text = await fse.readFile('./json.txt', {  encoding: 'utf8'});
     // const text = await response.text();
