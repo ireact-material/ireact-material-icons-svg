@@ -109,7 +109,7 @@ const downloadIcon = (icon) => {
       await fse.writeFile(
         path.join(
           currentDirectory,
-          `../material-icons/${icon.name}${themeFileMap[theme]}_24px.svg`,
+          `../material-icons/${theme}/${icon.name}.svg`,
         ),
         SVG,
       );
@@ -125,13 +125,16 @@ async function run() {
       // 为生成的使用信息描述一个key
       .describe('start-after', 'Resume at the following index');
 
-    await fse.emptyDir(path.join(currentDirectory, '../material-icons'));
-    await fse.emptyDir(path.join(currentDirectory, '../material-icons/baseline'));
+    Promise.all(Object.keys(themeMap).map(async (theme) => {
+      await fse.emptyDir(path.join(currentDirectory, `../material-icons/${theme}`));
+    }))
 
     // 请求谷歌
-    const response = await fetch('https://fonts.google.com/metadata/icons');
+    // const response = await fetch('https://fonts.google.com/metadata/icons');
 
-    const text = await fse.readFile('./json.txt', {  encoding: 'utf8'});
+    const text = await fse.readFile('./json.txt', {
+      encoding: 'utf8'
+    });
     // const text = await response.text();
     const data = JSON.parse(text.replace(")]}'", ''));
     let {

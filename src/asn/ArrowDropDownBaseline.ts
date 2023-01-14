@@ -1,0 +1,8 @@
+// This icon file is generated automatically.
+
+import { IconDefinition } from '../types';
+
+// 生产虚拟节点
+const ArrowDropDownBaseline: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M7 10l5 5 5-5z"}}]},"name":"arrow_drop_down","theme":"baseline"};
+
+export default ArrowDropDownBaseline;
