@@ -6,9 +6,9 @@ import {
   fileURLToPath
 } from 'url';
 
-import Queue from '../modules/waterfall/queue.mjs';
-import sleep from '../modules/waterfall/sleep.mjs';
-import retry from '../modules/waterfall/retry.mjs';
+import Queue from '../utils/waterfall/queue.mjs';
+import sleep from '../utils/waterfall/sleep.mjs';
+import retry from '../utils/waterfall/retry.mjs';
 
 // 当前路径
 const currentDirectory = fileURLToPath(new URL('.',

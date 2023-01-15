@@ -15,8 +15,6 @@ import { generalConfig } from './plugins/svgo/presets';
 import {
   // 分配属性标签
   assignAttrsAtTag,
-  // 调整ViewBox
-  adjustViewBox
 } from './plugins/svg2Definition/transforms';
 
 // 获取标识符
@@ -62,8 +60,6 @@ export default series(
       extraNodeTransformFactories: [
         // 对所有类型为 `svg` 的节点（即 `svg` 标签），赋值添加 `focusable="false"` 属性
         assignAttrsAtTag('svg', { focusable: 'false' }),
-        // 调整ViewBox
-        adjustViewBox
       ],
       // 在套用模板前，对抽象节点的序列化操作
       stringify: JSON.stringify,
@@ -128,8 +124,6 @@ export default series(
       extraNodeTransformFactories: [
         // 对所有类型为 `svg` 的节点（即 `svg` 标签），赋值添加 `focusable="false"` 属性
         assignAttrsAtTag('svg', { focusable: 'false' }),
-        // 调整ViewBox
-        adjustViewBox
       ],
       // 在套用模板前，对抽象节点的序列化操作
       stringify: JSON.stringify,
@@ -161,8 +155,6 @@ export default series(
       extraNodeTransformFactories: [
         // 对所有类型为 `svg` 的节点（即 `svg` 标签），赋值添加 `focusable="false"` 属性
         assignAttrsAtTag('svg', { focusable: 'false' }),
-        // 调整ViewBox
-        adjustViewBox
       ],
       // 在套用模板前，对抽象节点的序列化操作
       stringify: JSON.stringify,
@@ -194,8 +186,6 @@ export default series(
       extraNodeTransformFactories: [
         // 对所有类型为 `svg` 的节点（即 `svg` 标签），赋值添加 `focusable="false"` 属性
         assignAttrsAtTag('svg', { focusable: 'false' }),
-        // 调整ViewBox
-        adjustViewBox
       ],
       // 在套用模板前，对抽象节点的序列化操作
       stringify: JSON.stringify,
