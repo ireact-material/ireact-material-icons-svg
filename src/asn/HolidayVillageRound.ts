@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const HolidayVillageRound: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M17 20a1 1 0 001-1V8.76c0-.27-.11-.52-.29-.71l-3.76-3.76a1 1 0 00-1.42 1.42l3.32 3.32c.1.09.15.22.15.35V19a1 1 0 001 1zm4 0a1 1 0 001-1V7.11c0-.26-.11-.52-.29-.71l-2.1-2.11A1.05 1.05 0 0018.9 4a1 1 0 00-.71 1.71l1.67 1.67a.5.5 0 01.14.35V19a1 1 0 001 1zM8 15a1 1 0 011 1v4h4a1 1 0 001-1v-8.59c0-.27-.11-.52-.29-.71l-5-5a1 1 0 00-1.41 0l-5 5c-.19.19-.3.45-.3.71V19a1 1 0 001 1h4v-4a1 1 0 011-1zm0-2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"}}]},"name":"holiday_village","theme":"round"};
-
-export default HolidayVillageRound;

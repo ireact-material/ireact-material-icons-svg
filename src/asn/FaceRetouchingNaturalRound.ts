@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const FaceRetouchingNaturalRound: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M22.01 4.05L20.6 3.4l-.65-1.41a.5.5 0 00-.91 0L18.4 3.4l-1.41.65a.5.5 0 000 .91l1.41.64.65 1.41a.5.5 0 00.91 0l.64-1.41 1.41-.65a.5.5 0 000-.9z"}},{"tag":"circle","attrs":{"cx":"9","cy":"13","r":"1.25"}},{"tag":"circle","attrs":{"cx":"15","cy":"13","r":"1.25"}},{"tag":"path","attrs":{"d":"M19.5 8.8c-.78 0-1.49-.46-1.82-1.17l-.41-.9-.9-.41A2.01 2.01 0 0115.2 4.5a2 2 0 01.87-1.63 10 10 0 105.06 5.06 2 2 0 01-1.63.87zM12 20c-4.41 0-8-3.59-8-8 0-.05.01-.1 0-.14 2.6-.98 4.69-2.99 5.74-5.55a10 10 0 009.93 3.45A8.01 8.01 0 0112 20z"}}]},"name":"face_retouching_natural","theme":"round"};
-
-export default FaceRetouchingNaturalRound;

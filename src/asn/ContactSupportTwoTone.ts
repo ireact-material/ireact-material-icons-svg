@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const ContactSupportTwoTone: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0V0z"}},{"tag":"path","attrs":{"d":"M11.5 3a7.5 7.5 0 000 15H13v2.3c3.64-2.3 6-6.08 6-9.8A7.5 7.5 0 0011.5 3zm1 13.5h-2v-2h2v2zm0-3.5h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2a4 4 0 118 0c0 2.5-3 2.75-3 5z","opacity":".3"}},{"tag":"path","attrs":{"d":"M11.5 1a9.5 9.5 0 00-.5 18.99v3.6l1.43-.69C17.56 20.43 21 15.45 21 10.5A9.5 9.5 0 0011.5 1zM13 20.3V18h-1.5a7.5 7.5 0 117.5-7.5c0 3.73-2.36 7.51-6 9.8zm-2.5-5.8h2v2h-2zm1-10.5a4 4 0 00-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 00-4-4z"}}]},"name":"contact_support","theme":"twotone"};
-
-export default ContactSupportTwoTone;

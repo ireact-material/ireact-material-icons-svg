@@ -1,4 +1,0 @@
-// This icon file is generated automatically.
-// 生成抽象节点
-var FiberDvrTwoTone = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0V0z" } }, { "tag": "path", "attrs": { "d": "M20 11.56v-.89a1.3 1.3 0 00-1.33-1.33h-3.11v5.33h1.33v-1.78h1.02l.76 1.78H20l-.8-1.87c.44-.22.8-.71.8-1.24zm-1.33 0h-1.78v-.89h1.78v.89zM7.11 9.33H4v5.33h3.11a1.3 1.3 0 001.33-1.33v-2.67a1.3 1.3 0 00-1.33-1.33zm0 4H5.33v-2.67h1.78v2.67zm7-4h-1.34l-.89 3.05L11 9.33H9.66l1.56 5.34h1.33z" } }, { "tag": "path", "attrs": { "d": "M3 5h18v14H3z", "opacity": ".3" } }, { "tag": "path", "attrs": { "d": "M21 3H3a2 2 0 00-2 2v14a2 2 0 002 2h18a2 2 0 002-2V5a2 2 0 00-2-2zm0 16H3V5h18v14z" } }] }, "name": "fiber_dvr", "theme": "twotone" };
-export default FiberDvrTwoTone;

@@ -1,4 +1,0 @@
-// This icon file is generated automatically.
-// 生成抽象节点
-var EditNoteRound = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M14 11a1 1 0 01-1 1H4c-.55 0-1-.45-1-1s.45-1 1-1h9a1 1 0 011 1zM3 7a1 1 0 001 1h9c.55 0 1-.45 1-1s-.45-1-1-1H4a1 1 0 00-1 1zm7 8a1 1 0 00-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1h5a1 1 0 001-1zm8.01-2.13l.71-.71a1 1 0 011.41 0l.71.71a1 1 0 010 1.41l-.71.71-2.12-2.12zm-.71.71l-5.16 5.16a.48.48 0 00-.14.35v1.41c0 .28.22.5.5.5h1.41c.13 0 .26-.05.35-.15l5.16-5.16-2.12-2.11z" } }] }, "name": "edit_note", "theme": "round" };
-export default EditNoteRound;

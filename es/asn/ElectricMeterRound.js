@@ -1,4 +1,0 @@
-// This icon file is generated automatically.
-// 生成抽象节点
-var ElectricMeterRound = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "g", "attrs": {}, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }] }, { "tag": "path", "attrs": { "d": "M11.73 2A9.1 9.1 0 003 10.71a9 9 0 006 8.77V21a1 1 0 001 1 1 1 0 001-1v-1.06a8.26 8.26 0 002 0V21a1 1 0 001 1 1 1 0 001-1v-1.53A9.01 9.01 0 0021 11a9.01 9.01 0 00-9.27-9zm1.81 12.71L12 16.25c-.41.41-1.09.41-1.5 0a1.07 1.07 0 010-1.5l.5-.5-.54-.54a1 1 0 010-1.41L12 10.75a1.07 1.07 0 011.5 0c.41.41.41 1.09 0 1.5l-.5.5.54.54a1 1 0 010 1.42zM15 9H9a1 1 0 01-1-1 1 1 0 011-1h6a1 1 0 011 1 1 1 0 01-1 1z" } }] }, "name": "electric_meter", "theme": "round" };
-export default ElectricMeterRound;

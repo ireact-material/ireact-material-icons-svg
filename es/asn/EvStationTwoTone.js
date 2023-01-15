@@ -1,4 +1,0 @@
-// This icon file is generated automatically.
-// 生成抽象节点
-var EvStationTwoTone = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0V0z" } }, { "tag": "path", "attrs": { "d": "M8 13.5H6V19h6v-8l-4 7zm-2 0L10 6v5h2V5H6z", "opacity": ".3" } }, { "tag": "path", "attrs": { "d": "M12 3H6a2 2 0 00-2 2v16h10v-7.5h1.5v5a2.5 2.5 0 005 0V9a2.5 2.5 0 00-.73-1.77l.01-.01-3.72-3.72L15 4.56l2.11 2.11A2.5 2.5 0 1019 11.29v7.21c0 .55-.45 1-1 1s-1-.45-1-1V14a2 2 0 00-2-2h-1V5a2 2 0 00-2-2zm0 8v8H6V5h6v6zm6-1c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-8-4l-4 7.5h2V18l4-7h-2z" } }] }, "name": "ev_station", "theme": "twotone" };
-export default EvStationTwoTone;

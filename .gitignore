@@ -9,7 +9,14 @@
 /coverage
 
 # production
-/build
+# /lib
+# /es
+# /inline-namespaced-svg
+# /inline-svg
+# /src
+
+# publish
+*.tgz
 
 # misc
 .DS_Store

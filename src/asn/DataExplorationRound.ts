@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const DataExplorationRound: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M22 12a10 10 0 10-19.26 3.77l4.61-4.62a1 1 0 011.35-.06l2.6 2.19L14.58 10H14a1 1 0 01-1-1 1 1 0 011-1h3a1 1 0 011 1v3c0 .55-.45 1-1 1s-1-.45-1-1v-.58l-3.94 3.93a.99.99 0 01-1.35.05l-2.59-2.19-4.4 4.4A10 10 0 0012 22h8a2 2 0 002-2v-8zm-2.5 8.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"}}]},"name":"data_exploration","theme":"round"};
-
-export default DataExplorationRound;

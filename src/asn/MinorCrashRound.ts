@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const MinorCrashRound: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"g","attrs":{},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}}]},{"tag":"path","attrs":{"d":"M19.5 24c.82 0 1.5-.67 1.5-1.5v-7.16c0-.22-.04-.45-.11-.66l-1.97-5.67A1.5 1.5 0 0017.5 8h-11a1.5 1.5 0 00-1.42 1.01l-1.97 5.67c-.07.21-.11.43-.11.66v7.16c0 .83.68 1.5 1.5 1.5S6 23.33 6 22.5V22h12v.5c0 .83.67 1.5 1.5 1.5zM6.85 10h10.29l1.04 3H5.81l1.04-3zM6 17.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm9 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM8.71 5.71a1 1 0 01-1.41 0L5.71 4.12a1 1 0 111.41-1.41L8.71 4.3a1 1 0 010 1.41zm9.58-3a1 1 0 010 1.41L16.7 5.71a1 1 0 11-1.41-1.41l1.59-1.59a1 1 0 011.41 0zM12 5a1 1 0 01-1-1V1c0-.55.45-1 1-1s1 .45 1 1v3a1 1 0 01-1 1z"}}]},"name":"minor_crash","theme":"round"};
-
-export default MinorCrashRound;

@@ -1,4 +1,0 @@
-// This icon file is generated automatically.
-// 生成抽象节点
-var NumbersRound = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "g", "attrs": {}, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }] }, { "tag": "path", "attrs": { "d": "M20.68 9.27l.01-.06A.96.96 0 0019.76 8H17l.7-2.79A.97.97 0 0016.76 4c-.45 0-.83.3-.94.73L15 8h-4l.7-2.79A.97.97 0 0010.76 4c-.45 0-.83.3-.94.73L9 8H5.76c-.45 0-.84.3-.94.73l-.02.06A.97.97 0 005.74 10H8.5l-1 4H4.26c-.45 0-.83.3-.94.73l-.02.06A.97.97 0 004.24 16H7l-.7 2.79A.97.97 0 007.24 20c.45 0 .83-.3.94-.73L9 16h4l-.7 2.79a.97.97 0 00.94 1.21c.45 0 .83-.3.94-.73L15 16h3.24c.45 0 .83-.3.94-.73l.01-.06a.98.98 0 00-.94-1.21H15.5l1-4h3.24c.45 0 .84-.3.94-.73zM13.5 14h-4l1-4h4l-1 4z" } }] }, "name": "numbers", "theme": "round" };
-export default NumbersRound;

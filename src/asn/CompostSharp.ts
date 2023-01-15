@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const CompostSharp: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M12.87 11.81A2.5 2.5 0 0115 8h1c1.51 0 2-1 2-1s.55 6-3 6c-.49 0-.94-.14-1.32-.38-.24.64-.59 1.76-.76 2.96 1.26.22 2.28.89 2.77 1.77A6.5 6.5 0 0018.5 12h3A9.5 9.5 0 1112 2.5V0l4 4-4 4V5.5a6.51 6.51 0 00-3.69 11.85 3.97 3.97 0 012.98-1.8 9.41 9.41 0 00-.49-2.03A2 2 0 017.5 12v-.99c0-.56-.19-1.09-.5-1.51 0 0 4.45-.23 4.5 2.5 0 .29-.06.56-.17.8-.42-.32-.86-.6-1.33-.8a7.9 7.9 0 012 2.6 14.43 14.43 0 013-4.6c-.76.52-1.47 1.12-2.13 1.81z"}}]},"name":"compost","theme":"sharp"};
-
-export default CompostSharp;

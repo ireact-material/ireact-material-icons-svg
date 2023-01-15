@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const FormatBoldTwoTone: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0V0z"}},{"tag":"path","attrs":{"d":"M17.25 8c0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42.97-.67 1.65-1.77 1.65-2.79zM10 6.5h3a1.5 1.5 0 110 3h-3v-3zm3.5 9H10v-3h3.5a1.5 1.5 0 110 3z"}}]},"name":"format_bold","theme":"twotone"};
-
-export default FormatBoldTwoTone;

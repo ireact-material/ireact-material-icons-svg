@@ -1,8 +1,0 @@
-// This icon file is generated automatically.
-
-import { IconDefinition } from '../types';
-
-// 生成抽象节点
-const PhoneBluetoothSpeakerRound: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0V0z"}},{"tag":"path","attrs":{"d":"M19.23 15.26l-2.54-.29a2 2 0 00-1.64.57l-1.84 1.84a15.05 15.05 0 01-6.59-6.59l1.85-1.85a2 2 0 00.57-1.64l-.29-2.52a2 2 0 00-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07a17 17 0 0015.89 15.89 1.98 1.98 0 002.07-2v-1.73a1.98 1.98 0 00-1.76-1.98zm-2.44-9.25l-2.45 2.45a.5.5 0 000 .71c.2.2.52.2.71 0L17 7.23v3.15a.51.51 0 00.5.51.5.5 0 00.36-.15l2.18-2.18a.5.5 0 000-.71l-1.83-1.83 1.83-1.83c.09-.09.15-.22.15-.36s-.05-.26-.15-.36l-2.18-2.18a.5.5 0 00-.55-.11.5.5 0 00-.31.46v3.15l-1.95-1.95a.5.5 0 00-.71 0 .5.5 0 000 .71l2.45 2.46zm1.22-3.15l.96.96-.96.96V2.86zm0 4.37l.96.96-.96.96V7.23z"}}]},"name":"phone_bluetooth_speaker","theme":"round"};
-
-export default PhoneBluetoothSpeakerRound;

@@ -1,4 +1,0 @@
-// This icon file is generated automatically.
-// 生成抽象节点
-var DirectionsBusRound = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0V0z" } }, { "tag": "path", "attrs": { "d": "M4 16c0 .88.39 1.67 1 2.22v1.28a1.5 1.5 0 103 0V19h8v.5c0 .82.67 1.5 1.5 1.5.82 0 1.5-.67 1.5-1.5v-1.28c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm1.5-6H6V6h12v5z" } }] }, "name": "directions_bus", "theme": "round" };
-export default DirectionsBusRound;
