@@ -1,0 +1,8 @@
+// This icon file is generated automatically.
+
+import { IconDefinition } from '../types';
+
+// 生成抽象节点
+const EggSharp: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M12 3C8.5 3 5 9.33 5 14a7 7 0 1014 0c0-4.67-3.5-11-7-11zm1 15c-3 0-5-1.99-5-5v-1h2v1c0 2.92 2.42 3 3 3h1v2h-1z"}}]},"name":"egg","theme":"sharp"};
+
+export default EggSharp;

@@ -2,7 +2,7 @@
 
 import { IconDefinition } from '../types';
 
-// 生产虚拟节点
+// 生成抽象节点
 const SubdirectoryArrowRightBaseline: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0V0z"}},{"tag":"path","attrs":{"d":"M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z"}}]},"name":"subdirectory_arrow_right","theme":"baseline"};
 
 export default SubdirectoryArrowRightBaseline;

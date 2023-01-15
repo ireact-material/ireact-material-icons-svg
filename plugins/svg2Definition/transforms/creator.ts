@@ -12,12 +12,13 @@ import {
 
 // 转换方法 | 转换选项
 import { TransformFactory, TransformOptions } from '..';
-// 虚拟节点
+// 抽象节点
 import { AbstractNode } from '../../../templates/types';
 
 type Dictionary = Record<string, string>;
 
-// 分配属性标签
+// 是一个帮助对节点添加额外属性的辅助函数
+// 对所有类型为 `svg` 的节点（即 `svg` 标签），赋值添加 `focusable="false"` 属性
 export function assignAttrsAtTag(
   // 目标节点
   tag: string,

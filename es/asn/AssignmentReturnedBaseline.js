@@ -1,0 +1,4 @@
+// This icon file is generated automatically.
+// 生成抽象节点
+var AssignmentReturnedBaseline = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M19 3h-4.18A3.01 3.01 0 0012 1c-1.3 0-2.4.84-2.82 2H5a2 2 0 00-2 2v14c0 1.1.9 2 2 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 15l-5-5h3V9h4v4h3l-5 5z" } }] }, "name": "assignment_returned", "theme": "baseline" };
+export default AssignmentReturnedBaseline;

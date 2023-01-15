@@ -6,7 +6,7 @@ import File from 'vinyl';
 // 创建转换流
 export const createTrasformStream = (fn: (raw: string, file: File) => string) =>
   through.obj((file: File, encoding, done) => {
-    // 有isBuffer
+    // 对象是 Buffer
     if (file.isBuffer()) {
       // 转换编码
       const before = file.contents.toString(encoding);

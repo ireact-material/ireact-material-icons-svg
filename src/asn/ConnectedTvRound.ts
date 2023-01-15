@@ -1,0 +1,8 @@
+// This icon file is generated automatically.
+
+import { IconDefinition } from '../types';
+
+// 生成抽象节点
+const ConnectedTvRound: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M20 3H4a2 2 0 00-2 2v12c0 1.1.9 2 2 2h4v1a1 1 0 001 1h6a1 1 0 001-1v-1h4a2 2 0 001.99-2L22 5a2 2 0 00-2-2zm0 14H4V5h16v12zM7 15.97A2 2 0 005.03 14H5v2h2v-.03zm-1.38-3.42a3.51 3.51 0 012.83 2.84c.06.36.37.61.73.61.46 0 .82-.41.75-.86a5 5 0 00-4.06-4.06.75.75 0 00-.87.74c0 .37.26.67.62.73zm.02-3.02a6.52 6.52 0 015.83 5.82c.04.37.37.65.74.65.45 0 .79-.4.75-.85a8 8 0 00-7.11-7.1.76.76 0 00-.85.74c0 .37.27.71.64.74z"}}]},"name":"connected_tv","theme":"round"};
+
+export default ConnectedTvRound;

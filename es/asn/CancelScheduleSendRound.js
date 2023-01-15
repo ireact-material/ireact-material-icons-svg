@@ -1,0 +1,4 @@
+// This icon file is generated automatically.
+// 生成抽象节点
+var CancelScheduleSendRound = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "g", "attrs": {}, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }] }, { "tag": "path", "attrs": { "d": "M16.5 9c-.42 0-.83.04-1.24.11L2.4 3.6a1 1 0 00-1.39.91L1 9.2a1 1 0 00.78.98L10 12l-8.22 1.83a1 1 0 00-.78.97l.01 4.68a1 1 0 001.39.92l6.68-2.86A7.5 7.5 0 1016.5 9zm0 13a5.51 5.51 0 010-11 5.51 5.51 0 010 11z" } }, { "tag": "path", "attrs": { "d": "M18.62 14.38a.5.5 0 00-.71 0l-1.41 1.41-1.41-1.41c-.2-.2-.51-.2-.71 0s-.2.51 0 .71l1.41 1.41-1.41 1.41a.5.5 0 000 .71c.2.2.51.2.71 0l1.41-1.41 1.41 1.41c.2.2.51.2.71 0a.5.5 0 000-.71l-1.41-1.41 1.41-1.41a.5.5 0 000-.71z" } }] }, "name": "cancel_schedule_send", "theme": "round" };
+export default CancelScheduleSendRound;

@@ -58,6 +58,7 @@ export const generateIcons = (
             }
           })
         )
+        // 创建一个用于将 Vinyl 对象写入到文件系统的流
         .pipe(dest(toDir))
     );
   };

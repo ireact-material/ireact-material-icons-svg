@@ -1,0 +1,8 @@
+// This icon file is generated automatically.
+
+import { IconDefinition } from '../types';
+
+// 生成抽象节点
+const TempleBuddhistOutline: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M21 9.02c0 1.09-.89 1.98-1.98 1.98H18V8.86c1.72-.44 3-1.99 3-3.84V5l-2 .02C19 6.11 18.11 7 17.02 7h-.52L12 1 7.5 7h-.52A1.98 1.98 0 015 5.02H3c0 1.86 1.28 3.4 3 3.84V11H4.98A1.98 1.98 0 013 9.02H1c0 1.86 1.28 3.4 3 3.84V22h7v-4c0-.55.45-1 1-1s1 .45 1 1v4h7v-9.14c1.72-.44 3-1.99 3-3.84V9l-2 .02zm-9-4.69L14 7h-4l2-2.67zM8 9h8v2H8V9zm10 11h-3v-2a3 3 0 00-3-3 3 3 0 00-3 3v2H6v-7h12v7z"}}]},"name":"temple_buddhist","theme":"outline"};
+
+export default TempleBuddhistOutline;

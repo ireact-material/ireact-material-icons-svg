@@ -1,0 +1,4 @@
+// This icon file is generated automatically.
+// 生成抽象节点
+var FrontHandOutline = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M18.5 8c-.17 0-.34.02-.5.05V4.5a2.5 2.5 0 00-3.04-2.44 2.5 2.5 0 00-4.79-.47A2.5 2.5 0 007 4v.55A2.5 2.5 0 004 7v8.5a8.5 8.5 0 0017 0v-5A2.5 2.5 0 0018.5 8zm.5 7.5a6.5 6.5 0 11-13 0V7c0-.28.22-.5.5-.5s.5.22.5.5v5h2V4c0-.28.22-.5.5-.5s.5.22.5.5v7h2V2.5c0-.28.22-.5.5-.5s.5.22.5.5V11h2V4.5c0-.28.22-.5.5-.5s.5.22.5.5v8.92c-1.77.77-3 2.53-3 4.58h2a3 3 0 013-3v-4.5c0-.28.22-.5.5-.5s.5.22.5.5v5z" } }] }, "name": "front_hand", "theme": "outline" };
+export default FrontHandOutline;

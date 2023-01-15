@@ -41,9 +41,9 @@ export function renderIconDefinitionToSVGElement(
   return renderAbstractNodeToSVGElement(iconDefinition.icon, options);
 }
 
-// 将虚拟节点渲染到 SVG 元素
+// 将抽象节点渲染到 SVG 元素
 function renderAbstractNodeToSVGElement(
-  // 虚拟节点
+  // 抽象节点
   node: AbstractNode,
   // 帮助渲染选项
   options: HelperRenderOptions

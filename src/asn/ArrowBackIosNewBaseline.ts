@@ -2,7 +2,7 @@
 
 import { IconDefinition } from '../types';
 
-// 生产虚拟节点
+// 生成抽象节点
 const ArrowBackIosNewBaseline: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0z"}},{"tag":"path","attrs":{"d":"M17.77 3.77L16 2 6 12l10 10 1.77-1.77L9.54 12z"}}]},"name":"arrow_back_ios_new","theme":"baseline"};
 
 export default ArrowBackIosNewBaseline;

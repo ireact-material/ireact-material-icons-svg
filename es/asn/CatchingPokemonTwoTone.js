@@ -1,0 +1,4 @@
+// This icon file is generated automatically.
+// 生成抽象节点
+var CatchingPokemonTwoTone = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M12 4a8 8 0 017.94 7h-4.06a4.01 4.01 0 00-7.75 0H4.06A8 8 0 0112 4z", "opacity": ".3" } }, { "tag": "path", "attrs": { "d": "M12 2a10 10 0 100 20 10 10 0 000-20zm0 2a8 8 0 017.94 7h-4.06a4.01 4.01 0 00-7.75 0H4.06A8 8 0 0112 4zm2 8c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2 8a8 8 0 01-7.94-7h4.06a4 4 0 007.74 0h4.06A7.96 7.96 0 0112 20z" } }] }, "name": "catching_pokemon", "theme": "twotone" };
+export default CatchingPokemonTwoTone;

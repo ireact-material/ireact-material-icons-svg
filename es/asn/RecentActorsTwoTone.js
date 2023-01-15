@@ -1,0 +1,4 @@
+// This icon file is generated automatically.
+// 生成抽象节点
+var RecentActorsTwoTone = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0V0z" } }, { "tag": "path", "attrs": { "d": "M13 7H3v10h10V7zM8 8a1.95 1.95 0 110 3.9A1.95 1.95 0 018 8zm3.89 8H4.11v-.65c0-1.3 2.59-1.95 3.89-1.95s3.89.65 3.89 1.95V16z", "opacity": ".3" } }, { "tag": "path", "attrs": { "d": "M21 5h2v14h-2zm-4 0h2v14h-2zm-3 14a1 1 0 001-1V6a1 1 0 00-1-1H2a1 1 0 00-1 1v12a1 1 0 001 1h12zM3 7h10v10H3V7z" } }, { "tag": "circle", "attrs": { "cx": "8", "cy": "9.94", "r": "1.95" } }, { "tag": "path", "attrs": { "d": "M8 13.4c-1.3 0-3.89.65-3.89 1.95V16h7.78v-.65c0-1.3-2.59-1.95-3.89-1.95z" } }] }, "name": "recent_actors", "theme": "twotone" };
+export default RecentActorsTwoTone;

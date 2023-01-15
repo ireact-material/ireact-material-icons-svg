@@ -1,5 +1,5 @@
 
-// 虚拟节点
+// 抽象节点
 export interface AbstractNode {
   // tag
   tag: string;
@@ -23,4 +23,4 @@ export interface IconDefinition {
 
 // 主题类型
 export type ThemeType = 'baseline' | 'outline' | 'round' | 'twotone' | 'sharp';
-export type ThemeTypeUpperCase = 'Baseline' | 'outline' | 'Round' | 'TwoTone' | 'Sharp';
+export type ThemeTypeUpperCase = 'Baseline' | 'Outline' | 'Round' | 'TwoTone' | 'Sharp';

@@ -1,0 +1,8 @@
+// This icon file is generated automatically.
+
+import { IconDefinition } from '../types';
+
+// 生成抽象节点
+const AddPhotoAlternateTwoTone: IconDefinition = {"icon":{"tag":"svg","attrs":{"viewBox":"64 64 896 896","focusable":"false"},"children":[{"tag":"path","attrs":{"d":"M0 0h24v24H0V0z"}},{"tag":"path","attrs":{"d":"M10.21 16.83l-1.96-2.36L5.5 18h11l-3.54-4.71z"}},{"tag":"path","attrs":{"d":"M16.5 18h-11l2.75-3.53 1.96 2.36 2.75-3.54L16.5 18zM17 7h-3V6H4v14h14V10h-1V7z","opacity":".3"}},{"tag":"path","attrs":{"d":"M20 4V1h-2v3h-3v2h3v2.99h2V6h3V4zm-2 16H4V6h10V4H4a2 2 0 00-2 2v14c0 1.1.9 2 2 2h14a2 2 0 002-2V10h-2v10z"}}]},"name":"add_photo_alternate","theme":"twotone"};
+
+export default AddPhotoAlternateTwoTone;

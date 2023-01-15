@@ -1,0 +1,4 @@
+// This icon file is generated automatically.
+// 生成抽象节点
+var RuleFolderRound = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M0 0h24v24H0z" } }, { "tag": "path", "attrs": { "d": "M20 6h-8l-1.41-1.41A2 2 0 009.17 4H4a2 2 0 00-1.99 2L2 18c0 1.1.9 2 2 2h16a2 2 0 002-2V8a2 2 0 00-2-2zM7.12 15.29l-1.41-1.41a1 1 0 111.41-1.41l.71.71 2.83-2.83a1 1 0 111.41 1.41L8.53 15.3a1 1 0 01-1.41-.01zM17.41 13l.88.88a1 1 0 11-1.41 1.41l-.88-.88-.88.88a1 1 0 11-1.41-1.41l.88-.88-.88-.88a1 1 0 111.41-1.41l.88.88.88-.88a1 1 0 111.41 1.41l-.88.88z" } }] }, "name": "rule_folder", "theme": "round" };
+export default RuleFolderRound;
