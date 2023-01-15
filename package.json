@@ -26,8 +26,6 @@
     "build": "cross-env NODE_ENV=production && npm run build:es && npm run build:lib",
     "test": "cross-env NODE_ENV=test && npm run test:unit",
     "test:unit": "jest",
-    "prepublishOnly": "npm run test && npm run g && npm run build && npm run type-check && npm run digest",
-    "digest": "node scripts/digest.js",
     "download": "node ./scripts/download.mjs"
   },
   "devDependencies": {
