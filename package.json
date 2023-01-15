@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "sideEffects": false,
   "description": "google material icons svg",
-  "homepage": "https://github.com/ireact-material/ireact-material-icons-svg",
-  "license": "MIT",
+  "author": "282126990@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ireact-material/ireact-material-icons-svg"
+  },
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -13,10 +16,6 @@
     "inline-svg",
     "inline-namespaced-svg"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ireact-material/ireact-material-icons-svg"
-  },
   "scripts": {
     "g": "npm run generate",
     "generate": "cross-env NODE_ENV=production gulp --require ts-node/register/transpile-only",
