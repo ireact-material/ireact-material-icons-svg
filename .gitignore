@@ -9,11 +9,11 @@
 /coverage
 
 # production
-# /lib
-# /es
-# /inline-namespaced-svg
-# /inline-svg
-# /src
+/lib
+/es
+/inline-namespaced-svg
+/inline-svg
+/src
 
 # publish
 *.tgz
