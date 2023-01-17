@@ -1,6 +1,9 @@
 import { createTrasformStream } from '../creator';
 import template from 'lodash.template';
 
+// 排除文件
+const excludeList = ['helpers', 'types', 'index']
+
 // 使用模版选项
 export interface UseTemplatePluginOptions {
   template: string;
@@ -12,6 +15,7 @@ export interface MapToInterpolate {
   (meta: { name: string; content: string; path: string }): object;
 }
 
+
 // 使用模版
 export const useTemplate = ({
   template: tplContent,
@@ -21,8 +25,13 @@ export const useTemplate = ({
   const executor = template(tplContent);
 
   // 创建转换流
-  return createTrasformStream((content, { stem: name, path }) =>
+  return createTrasformStream((content, { stem: name, path }) => {
+    const findIndex = excludeList.findIndex((exclude) => exclude === name)
+    if(findIndex > -1) {
+      return ''
+    }
+
     // 吧值映射到模版
-    executor(mapToInterpolate({ name, content, path }))
-  );
+    return executor(mapToInterpolate({ name, content, path }));
+  });
 };

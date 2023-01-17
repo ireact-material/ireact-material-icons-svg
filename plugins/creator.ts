@@ -14,9 +14,17 @@ export const createTrasformStream = (fn: (raw: string, file: File) => string) =>
       try {
         const after = fn(before, file);
 
-        file.contents = Buffer.from(after);
+        // 有返回文件
+        if (after) {
+          file.contents = Buffer.from(after);
+          done(null, file);
+        }
+        // 跳过文件
+        else {
+          done(null);
+        }
 
-        done(null, file);
+        // done(null, file);
       } catch (err) {
         done(err, null);
       }
