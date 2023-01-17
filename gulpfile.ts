@@ -374,8 +374,14 @@ export default series(
       template: indexTemplate,
       // 映射文件
       mapToInterpolate: ({ name: identifier }) => {
+        let _identifier = upperFirst(identifier);
+
+        if (identifier === 'twotone') {
+          _identifier = 'TwoTone';
+        }
+
         return {
-          identifier: upperFirst(identifier),
+          identifier:  _identifier,
           path: `./${identifier}`
         };
       }
