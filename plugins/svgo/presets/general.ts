@@ -7,6 +7,6 @@ export const generalConfig: SVGO.Options = mergeRight(base, {
   plugins: [
     ...(base.plugins || []),
     // 删除属性
-    { removeAttrs: { attrs: ['class', 'fill'] } }
+    // { removeAttrs: { attrs: ['class', 'fill'] } }
   ]
 });
