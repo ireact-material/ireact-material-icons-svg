@@ -1,6 +1,6 @@
 {
-  "name": "ireact-material-icons-svg",
-  "version": "0.0.6",
+  "name": "@ireact-material-icons/svg",
+  "version": "0.0.7",
   "sideEffects": false,
   "description": "google material icons svg",
   "author": "282126990@qq.com",
