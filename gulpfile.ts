@@ -76,11 +76,11 @@ export default series(
       // 模板中的插值映射
       mapToInterpolate: ({ name, content }) => ({
         // 获取标识符
-        identifier: getIdentifier({ name, themeSuffix: 'Baseline' }),
+        identifier: getIdentifier({ name }),
         content
       }),
       // 最后输出文件命名
-      filename: ({ name }) => getIdentifier({ name, themeSuffix: 'Baseline' })
+      filename: ({ name }) => getIdentifier({ name })
     }),
 
     // 2.3 生成 outline 主题风格的图标抽象节点
@@ -107,11 +107,11 @@ export default series(
       // 模板中的插值映射
       mapToInterpolate: ({ name, content }) => ({
         // 获取标识符
-        identifier: getIdentifier({ name, themeSuffix: 'Outline' }),
+        identifier: getIdentifier({ name }),
         content
       }),
       // 最后输出文件命名
-      filename: ({ name }) => getIdentifier({ name, themeSuffix: 'Outline' })
+      filename: ({ name }) => getIdentifier({ name })
     }),
 
     // 2.4 生成 round 主题风格的图标抽象节点
@@ -138,11 +138,11 @@ export default series(
       // 模板中的插值映射
       mapToInterpolate: ({ name, content }) => ({
         // 获取标识符
-        identifier: getIdentifier({ name, themeSuffix: 'Round' }),
+        identifier: getIdentifier({ name }),
         content
       }),
       // 最后输出文件命名
-      filename: ({ name }) => getIdentifier({ name, themeSuffix: 'Round' })
+      filename: ({ name }) => getIdentifier({ name })
     }),
 
     // 2.5 生成 sharp 主题风格的图标抽象节点
@@ -169,11 +169,11 @@ export default series(
       // 模板中的插值映射
       mapToInterpolate: ({ name, content }) => ({
         // 获取标识符
-        identifier: getIdentifier({ name, themeSuffix: 'Sharp' }),
+        identifier: getIdentifier({ name }),
         content
       }),
       // 最后输出文件命名
-      filename: ({ name }) => getIdentifier({ name, themeSuffix: 'Sharp' })
+      filename: ({ name }) => getIdentifier({ name })
     }),
 
     // 2.6 生成 twotone 主题风格的图标抽象节点
@@ -200,11 +200,11 @@ export default series(
       // 模板中的插值映射
       mapToInterpolate: ({ name, content }) => ({
         // 获取标识符
-        identifier: getIdentifier({ name, themeSuffix: 'TwoTone' }),
+        identifier: getIdentifier({ name }),
         content
       }),
       // 最后输出文件命名
-      filename: ({ name }) => getIdentifier({ name, themeSuffix: 'TwoTone' })
+      filename: ({ name }) => getIdentifier({ name })
     })
   ),
 
@@ -381,7 +381,7 @@ export default series(
         }
 
         return {
-          identifier:  _identifier,
+          identifier: _identifier,
           path: `./${identifier}`
         };
       }
